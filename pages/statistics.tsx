@@ -18,12 +18,9 @@ const Statistics = () => {
   const [items, setItems] = useState<Statistics>();
 
   const fetch = async () => {
-    let response = await axios.get<Statistics>(
-      `${process.env.ETHERFACE_REST_ADDRESS}/v1/statistics`,
-      {
-        validateStatus: null, // https://axios-http.com/docs/req_config
-      }
-    );
+    let response = await axios.get<Statistics>(`/v1/statistics`, {
+      validateStatus: null, // https://axios-http.com/docs/req_config
+    });
 
     let responseData = response.data;
     let isError = response.status != 200 ? true : false;
