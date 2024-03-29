@@ -91,8 +91,8 @@ const ApiDocumentation = () => {
               <p>
                 <b>Example:</b>{" "}
                 <LinkItem
-                  text={`${restAddress}/v1/signatures/text/all/balanceOf/1`}
-                  url={`https://${restAddress}/v1/signatures/text/all/balanceOf/1`}
+                  text={`/v1/signatures/text/all/balanceOf/1`}
+                  url={`/v1/signatures/text/all/balanceOf/1`}
                 />{" "}
                 returns all signatures starting with <code>balanceOf</code>{" "}
                 (case sensitive!)
@@ -123,8 +123,8 @@ const ApiDocumentation = () => {
               <p>
                 <b>Example:</b>{" "}
                 <LinkItem
-                  text={`${restAddress}/v1/signatures/hash/all/70a08231/1`}
-                  url={`https://${restAddress}/v1/signatures/hash/all/70a08231/1`}
+                  text={`/v1/signatures/hash/all/70a08231/1`}
+                  url={`/v1/signatures/hash/all/70a08231/1`}
                 />{" "}
                 returns all signatures starting with the hash{" "}
                 <code>70a08231</code> (case sensitive!)
@@ -157,8 +157,8 @@ const ApiDocumentation = () => {
               <p>
                 <b>Example:</b>{" "}
                 <LinkItem
-                  text={`${restAddress}/v1/sources/github/all/7/1`}
-                  url={`https://${restAddress}/v1/sources/github/all/7/1`}
+                  text={`/v1/sources/github/all/7/1`}
+                  url={`/v1/sources/github/all/7/1`}
                 />{" "}
                 returns all GitHub repositories which contain the{" "}
                 <code>balanceOf(address)</code> signature /{" "}
@@ -192,8 +192,8 @@ const ApiDocumentation = () => {
               <p>
                 <b>Example:</b>{" "}
                 <LinkItem
-                  text={`${restAddress}/v1/sources/etherscan/all/7/1`}
-                  url={`https://${restAddress}/v1/sources/etherscan/all/7/1`}
+                  text={`/v1/sources/etherscan/all/7/1`}
+                  url={`/v1/sources/etherscan/all/7/1`}
                 />{" "}
                 returns all Etherscan addresses which contain the{" "}
                 <code>balanceOf(address)</code> signature /{" "}
