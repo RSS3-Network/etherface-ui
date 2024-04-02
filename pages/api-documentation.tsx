@@ -33,7 +33,6 @@ const ApiDocumentation = () => {
   return (
     <Layout>
       <Navbar />
-
       <div className="flex flex-col items-center">
         <Paragraph
           title="Introduction"
