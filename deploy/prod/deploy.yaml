@@ -6,7 +6,6 @@ metadata:
     app: etherface
     component: ui
 spec:
-  replicas: 3
   selector:
     matchLabels:
       app: etherface
