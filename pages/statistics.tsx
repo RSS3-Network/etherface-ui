@@ -140,9 +140,7 @@ const Statistics = () => {
               })}
               <Card
                 title={<span>Average inserts / day</span>}
-                stat={items.statistics_various_signature_counts.average_daily_signature_insert_rate_last_week
-                  .toLocaleString()
-                  .replaceAll(",", ".")}
+                stat={items.statistics_various_signature_counts.average_daily_signature_insert_rate_last_week.toLocaleString()}
               />
             </div>
 
@@ -185,9 +183,12 @@ const Statistics = () => {
                           className="bg-white border-b hover:bg-gray-50"
                         >
                           <td className="py-2 px-4">{idx + 1}</td>
-                          <td className="py-2 px-4">{item.text}</td>
                           <td className="py-2 px-4">
-                            {item.count.toLocaleString().replaceAll(",", ".")}
+                            {item.text.slice(0, 70)}
+                            {item.text.length > 70 ? "..." : ""}
+                          </td>
+                          <td className="py-2 px-4">
+                            {item.count.toLocaleString()}
                           </td>
                         </tr>
                       )
